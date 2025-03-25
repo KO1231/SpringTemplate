@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title th:text="'HTTP Status ' + ${errorCode} + ' – ' + ${errorType}"></title>
+        <link rel="stylesheet" href="/public/styles/error.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex">
+    </head>
+    <body>
+        <header>
+            <h1 class="error-header" th:text="'HTTP Status ' + ${errorCode} + ' – ' + ${errorType}"></h1>
+        </header>
+        <hr class="line">
+        <p>
+            <b class="column-title">Type</b> <span class="column-body">Error Report</span>
+        </p>
+        <p>
+            <b class="column-title">Message</b> <span class="column-body" th:text="${message}"></span>
+
+        </p>
+        <p>
+            <b class="column-title">Timestamp</b> <span class="column-body" th:text="${timestamp}"></span>
+        </p>
+        <hr class="line">
+        <footer>
+            <h3 class="error-footer">Kazuhiro Oka (kazutech.jp)</h3>
+        </footer>
+    </body>
+</html>
