@@ -1,5 +1,7 @@
 package jp.kazutech.springtemplate.service;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.Set;
 import jp.kazutech.springtemplate.db.TestUser;
 import jp.kazutech.springtemplate.security.UserAuthority;

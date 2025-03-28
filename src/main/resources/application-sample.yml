@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://SAMPLE_HOST:SAMPLE_PORT/SAMPLE_DATABASE"
+    username: "SAMPLE_USER"
+    password: "SAMPLE_PASSWORD"
+
+jwt:
+  expiration: 400000
+
+config:
+  base-url: "http://localhost:8080"
+
+mybatis:
+  mapper-locations: "classpath:db/mapper/**/*.xml,classpath:db/mapper_test/**/*.xml"
